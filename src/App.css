@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway;
+}
+
+nav {
+  display: flex;
+  background-color: rgba(251, 255, 0, 10);
+  padding: 20px;
+  border-bottom: 4px solid black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 3rem;
+}
+
+.input-data {
+  position: relative;
+  width: 30%;
+  align-items: center;
+}
+
+.input-data label {
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-data input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 2px solid black;
+  font-size: 1.5rem;
+}
+
+.input-data input:focus~label,
+.input-data input:valid~label {
+  transform: translateY(-25px);
+  font-size: 15px;
+}
+
+nav h3 {
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content {
+  padding: 25px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.4);
+  min-height: 80%;
+  width: 20rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.6);
+  padding: 5rem;
+  border-radius: 30px;
+}
+
+.avatar {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 10rem;
+  z-index: 2;
+  transition: transform 0.5s;
+}
+
+.avatar img:hover {
+  transform: scale(1.8);
+}
+
+.circle {
+  width: 11rem;
+  height: 11rem;
+  background: rgb(255, 238, 0);
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.info {
+  padding-top: 1.2rem;
+  justify-content: center;
+}
+
+.info h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  font-weight: lighter;
+  color: rgb(112, 112, 112);
+  text-align: center;
+}
+
+.info button {
+  width: 100%;
+  min-height: 3rem;
+  border-radius: 30px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.7s;
+}
+
+.info button:hover {
+  background-color: rgba(251, 255, 0, 10);
+}
+
+.pager button {
+  position: fixed;
+  bottom: 1rem;
+  height: 7rem;
+  width: 7rem;
+  z-index: 999;
+  border-radius: 30px;
+  background: rgba(255, 238, 0, 0.5);
+  border: none;
+  outline: none;
+}
+
+.prev {
+  left: 1rem;
+}
+
+.next {
+  right: 1rem;
+}

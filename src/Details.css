@@ -1,0 +1,80 @@
+.pokemonDetails {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: gray;
+    width: 75%;
+}
+
+.details {
+    min-height: 75vh;
+}
+
+.mainSprite {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallSprites {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallSprites img {
+    height: 20%;
+
+}
+
+.mainSprite img {
+    height: 10rem;
+}
+
+.pokeName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.types {
+    flex: 1;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+
+.types .fire {
+    background-color: red;
+}
+
+.types .flying {
+    background-color: white;
+}
+
+.types .poison {
+    background-color: purple;
+}
+
+.types .grass {
+    background-color: green;
+}
+
+.ability {
+    flex: 1;
+}
